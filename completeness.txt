@@ -1,0 +1,47 @@
+For the Sokoban problem, the defined planner P1 is a complete algorithm.
+First let's prove the completeness of another algorithm P2.
+This algorithm will look at each possible up/down/left/right movement of the
+robot.
+Let a state be defined as the tuple of the robot position and the set of ball
+positions.
+Let the directed graph G=(V,A) define which state transitions exist with unitary
+weighted edges.
+When A* is applied to G with cost heuristics which are pure functions of the
+underlying map and the state, then each node may only be visited a finite
+number of times as a node is only visited if it is done so with a lower cost
+as the triangle inequality holds under this unitary weighted graph.
+This upper bound is given by O(|A|).
+Thus given the above constraints, all connected states will be visited in
+O(|A|) worst case and by detecting if the goal state has been reached or not,
+it can be said if the problem has any solution.
+
+With this established, the used algorithm is a restricted version of above
+which produces a reduced state directed graph G2=(V2,A2) which maintains
+connectivity with respect to the goal state.
+The first graph simplification is to remove any subgraphs which cannot
+feasibly reach the goal state.
+In all presented problems it is assumed that the number of balls is equal to
+the number of goals.
+Thus if one or more balls enters a configuration where a ball at a non-goal
+space cannot decrease its distance to a goal under all permutations of movable
+balls, then the goal state cannot be reached.
+Thus this subgraph originating at the vertex representing this state cannot be
+connected to the goal and eliminating it does not alter the graph
+connectivity.
+The second graph simplification is to merge states under which the ball exists
+within the same subspace and the balls are at identical positions.
+Let the new state S2 be the subspace of the robot and the ball positions.
+Let G3=(V3,A3) be G2 with vertices merged when their S2 representation is
+identical and with duplicate directed edged in A3 eliminated.
+If there was a connected path in G2, then there must be a connected path in G3
+as the path can be expressed by merging identical path steps from the solution
+in G2 and by definition the merged edges will exist.
+If there was not a connected path in G2, then there must not be a path in G3,
+as that would require an edge A to connect the subgraph that the solution
+exists in and the subgraph that is accessible in G2.
+No such edge exists in A and by definition any two nodes that are merged in G3
+are connected, thus there cannot exist an edge A in G3.
+
+Given the proof of completeness of the full problem under A* and the lemmas of
+identical connectivity with respect to the starting state and the goal state,
+this algorithm is complete.

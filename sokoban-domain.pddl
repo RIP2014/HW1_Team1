@@ -34,7 +34,6 @@
 	
 	;Define Move Action
 	;Requires from location, to location and direction of move
-	:parameters (?from ?to ?dirMove)
 	;Requires from and to locations to be within workspace
 	
 	:parameters (?from ?to ?dirMove)

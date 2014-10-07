@@ -1,0 +1,5 @@
+- To make the executable, run `make' in the terminal.
+
+- To run the executable, run `./solver X' in the terminal, where X is an integer between 0 and 4 (since these are the level files provided).
+
+- Please note that level0.txt presents the first level in the Flash version of Sokoban which was linked to the class website (joriswit.nl/sokoban/flash/)

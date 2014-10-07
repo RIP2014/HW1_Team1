@@ -1,3 +1,5 @@
+(NOTE: These strings represent a sequence of inputs that should be given to the robot to solve the puzzles. Imagine controlling the robot with a directional control pad: "D" = down, "U" = up, "L" = left, "R" = right.)
+
 Problem1:
 DRRDLULLDDRUUU
 

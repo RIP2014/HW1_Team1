@@ -1,0 +1,73 @@
+
+ff: parsing domain file
+domain 'SOKOBAN' defined
+ ... done.
+ff: parsing problem file
+problem 'SOKOBAN2' defined
+ ... done.
+
+
+
+Cueing down from goal distance:   13 into depth [1]
+                                  12            [1]
+                                  11            [1][2][3][4][5][6][7][8][9][10][11][12][13][14][15][16][17][18][19][20][21][22][23]
+
+Enforced Hill-climbing failed !
+switching to Best-first Search now.
+
+advancing to distance :   13
+                          12
+                          11
+                          10
+                           9
+                           8
+                           7
+                           5
+                           4
+                           3
+                           2
+                           1
+                           0
+
+ff: found legal plan as follows
+
+step    0: MOVE X02-F X02-G UP
+        1: MOVE X02-G X03-G RIGHT
+        2: MOVE X03-G X04-G RIGHT
+        3: PUSH X04-G X04-F X04-E DOWN BLOCK2
+        4: MOVE X04-F X04-G UP
+        5: MOVE X04-G X03-G LEFT
+        6: MOVE X03-G X02-G LEFT
+        7: MOVE X02-G X02-F DOWN
+        8: PUSH X02-F X03-F X04-F RIGHT BLOCK1
+        9: MOVE X03-F X03-E DOWN
+       10: PUSH X03-E X04-E X05-E RIGHT BLOCK2
+       11: MOVE X04-E X03-E LEFT
+       12: MOVE X03-E X03-F UP
+       13: MOVE X03-F X03-G UP
+       14: MOVE X03-G X04-G RIGHT
+       15: PUSH X04-G X04-F X04-E DOWN BLOCK1
+       16: MOVE X04-F X05-F RIGHT
+       17: PUSH X05-F X05-E X05-D DOWN BLOCK2
+       18: PUSH X05-E X05-D X05-C DOWN BLOCK2
+       19: PUSH X05-D X05-C X05-B DOWN BLOCK2
+       20: MOVE X05-C X05-D UP
+       21: MOVE X05-D X04-D LEFT
+       22: PUSH X04-D X04-E X04-F UP BLOCK1
+       23: MOVE X04-E X05-E RIGHT
+       24: MOVE X05-E X05-F UP
+       25: PUSH X05-F X04-F X03-F LEFT BLOCK1
+       26: MOVE X04-F X04-E DOWN
+       27: MOVE X04-E X03-E LEFT
+       28: PUSH X03-E X03-F X03-G UP BLOCK1
+       29: MOVE X03-F X04-F RIGHT
+       30: MOVE X04-F X04-G UP
+       31: PUSH X04-G X03-G X02-G LEFT BLOCK1
+     
+
+time spent:    0.00 seconds instantiating 76 easy, 0 hard action templates
+               0.00 seconds reachability analysis, yielding 56 facts and 76 actions
+               0.00 seconds creating final representation with 56 relevant facts
+               0.00 seconds building connectivity graph
+               0.00 seconds searching, evaluating 148 states, to a max depth of 23
+               0.00 seconds total time

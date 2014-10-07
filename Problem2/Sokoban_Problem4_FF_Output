@@ -1,0 +1,122 @@
+
+ff: parsing domain file
+domain 'SOKOBAN' defined
+ ... done.
+ff: parsing problem file
+problem 'SOKOBAN4' defined
+ ... done.
+
+
+
+Cueing down from goal distance:   15 into depth [1]
+                                  14            [1]
+                                  12            [1]
+                                   7            [1]
+                                   6            [1][2][3][4]
+                                   5            [1]
+
+Enforced Hill-climbing failed !
+switching to Best-first Search now.
+
+advancing to distance :   15
+                          14
+                          11
+                          10
+                           8
+                           6
+                           4
+                           3
+                           2
+                           1
+                           0
+
+ff: found legal plan as follows
+
+step    0: MOVE X06-E X05-E LEFT
+        1: MOVE X05-E X04-E LEFT
+        2: MOVE X04-E X04-D DOWN
+        3: MOVE X04-D X03-D LEFT
+        4: MOVE X03-D X02-D LEFT
+        5: MOVE X02-D X02-E UP
+        6: PUSH X02-E X03-E X04-E RIGHT BLOCKG
+        7: PUSH X03-E X04-E X05-E RIGHT BLOCKG
+        8: MOVE X04-E X04-D DOWN
+        9: MOVE X04-D X04-C DOWN
+       10: MOVE X04-C X04-B DOWN
+       11: MOVE X04-B X03-B LEFT
+       12: PUSH X03-B X03-C X03-D UP BLOCKG
+       13: MOVE X03-C X04-C RIGHT
+       14: MOVE X04-C X04-D UP
+       15: MOVE X04-D X04-E UP
+       16: MOVE X04-E X03-E LEFT
+       17: MOVE X03-E X02-E LEFT
+       18: MOVE X02-E X02-D DOWN
+       19: PUSH X02-D X03-D X04-D RIGHT BLOCKG
+       20: MOVE X03-D X03-C DOWN
+       21: MOVE X03-C X04-C RIGHT
+       22: MOVE X04-C X05-C RIGHT
+       23: MOVE X05-C X05-D UP
+       24: MOVE X05-D X06-D RIGHT
+       25: MOVE X06-D X06-E UP
+       26: PUSH X06-E X05-E X04-E LEFT BLOCKG
+       27: PUSH X05-E X04-E X03-E LEFT BLOCKG
+       28: MOVE X04-E X05-E RIGHT
+       29: MOVE X05-E X05-D DOWN
+       30: MOVE X05-D X05-C DOWN
+       31: MOVE X05-C X04-C LEFT
+       32: MOVE X04-C X03-C LEFT
+       33: MOVE X03-C X03-D UP
+       34: PUSH X03-D X04-D X05-D RIGHT BLOCKG
+       35: MOVE X04-D X04-E UP
+       36: MOVE X04-E X05-E RIGHT
+       37: MOVE X05-E X05-F UP
+       38: MOVE X05-F X05-G UP
+       39: MOVE X05-G X04-G LEFT
+       40: PUSH X04-G X04-F X04-E DOWN BLOCKG
+       41: PUSH X04-F X04-E X04-D DOWN BLOCKG
+       42: PUSH X04-E X04-D X04-C DOWN BLOCKG
+       43: MOVE X04-D X03-D LEFT
+       44: MOVE X03-D X02-D LEFT
+       45: MOVE X02-D X02-E UP
+       46: PUSH X02-E X03-E X04-E RIGHT BLOCKG
+       47: MOVE X03-E X03-D DOWN
+       48: MOVE X03-D X04-D RIGHT
+       49: PUSH X04-D X04-E X04-F UP BLOCKG
+       50: MOVE X04-E X05-E RIGHT
+       51: MOVE X05-E X06-E RIGHT
+       52: MOVE X06-E X06-D DOWN
+       53: PUSH X06-D X05-D X04-D LEFT BLOCKG
+       54: MOVE X05-D X05-C DOWN
+       55: PUSH X05-C X04-C X03-C LEFT BLOCKG
+       56: MOVE X04-C X04-B DOWN
+       57: MOVE X04-B X03-B LEFT
+       58: PUSH X03-B X03-C X03-D UP BLOCKG
+       59: MOVE X03-C X04-C RIGHT
+       60: MOVE X04-C X05-C RIGHT
+       61: MOVE X05-C X05-D UP
+       62: MOVE X05-D X05-E UP
+       63: MOVE X05-E X04-E LEFT
+       64: MOVE X04-E X03-E LEFT
+       65: PUSH X03-E X03-D X03-C DOWN BLOCKG
+       66: PUSH X03-D X04-D X05-D RIGHT BLOCKG
+       67: MOVE X04-D X04-C DOWN
+       68: MOVE X04-C X04-B DOWN
+       69: MOVE X04-B X03-B LEFT
+       70: PUSH X03-B X03-C X03-D UP BLOCKG
+       71: MOVE X03-C X04-C RIGHT
+       72: MOVE X04-C X04-D UP
+       73: MOVE X04-D X04-E UP
+       74: MOVE X04-E X05-E RIGHT
+       75: MOVE X05-E X05-F UP
+       76: MOVE X05-F X05-G UP
+       77: MOVE X05-G X04-G LEFT
+       78: PUSH X04-G X04-F X04-E DOWN BLOCKG
+       79: PUSH X04-F X04-E X04-D DOWN BLOCKG
+     
+
+time spent:    0.00 seconds instantiating 86 easy, 0 hard action templates
+               0.00 seconds reachability analysis, yielding 57 facts and 86 actions
+               0.00 seconds creating final representation with 57 relevant facts
+               0.00 seconds building connectivity graph
+               0.04 seconds searching, evaluating 7786 states, to a max depth of 4
+               0.04 seconds total time

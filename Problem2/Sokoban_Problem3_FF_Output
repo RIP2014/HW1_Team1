@@ -1,0 +1,154 @@
+
+ff: parsing domain file
+domain 'SOKOBAN' defined
+ ... done.
+ff: parsing problem file
+problem 'SOKOBAN3' defined
+ ... done.
+
+
+
+Cueing down from goal distance:   18 into depth [1]
+                                  17            [1]
+
+Enforced Hill-climbing failed !
+switching to Best-first Search now.
+
+advancing to distance :   18
+                          17
+                          16
+                          15
+                          12
+                          11
+                          10
+                           8
+                           7
+                           6
+                           5
+                           4
+                           3
+                           2
+                           1
+                           0
+
+ff: found legal plan as follows
+
+step    0: MOVE X03-D X04-D RIGHT
+        1: MOVE X04-D X04-C DOWN
+        2: MOVE X04-C X04-B DOWN
+        3: MOVE X04-B X05-B RIGHT
+        4: MOVE X05-B X06-B RIGHT
+        5: MOVE X06-B X06-C UP
+        6: MOVE X06-C X06-D UP
+        7: PUSH X06-D X05-D X04-D LEFT BLOCKC
+        8: PUSH X05-D X04-D X03-D LEFT BLOCKC
+        9: MOVE X04-D X05-D RIGHT
+       10: MOVE X05-D X06-D RIGHT
+       11: MOVE X06-D X06-C DOWN
+       12: MOVE X06-C X06-B DOWN
+       13: MOVE X06-B X07-B RIGHT
+       14: MOVE X07-B X08-B RIGHT
+       15: MOVE X08-B X08-C UP
+       16: MOVE X08-C X08-D UP
+       17: MOVE X08-D X08-E UP
+       18: MOVE X08-E X08-F UP
+       19: MOVE X08-F X08-G UP
+       20: MOVE X08-G X09-G RIGHT
+       21: MOVE X09-G X10-G RIGHT
+       22: MOVE X10-G X10-F DOWN
+       23: MOVE X10-F X10-E DOWN
+       24: MOVE X10-E X10-D DOWN
+       25: PUSH X10-D X09-D X08-D LEFT BLOCKA
+       26: MOVE X09-D X10-D RIGHT
+       27: MOVE X10-D X10-E UP
+       28: MOVE X10-E X10-F UP
+       29: MOVE X10-F X10-G UP
+       30: MOVE X10-G X09-G LEFT
+       31: MOVE X09-G X08-G LEFT
+       32: MOVE X08-G X08-F DOWN
+       33: MOVE X08-F X08-E DOWN
+       34: PUSH X08-E X08-D X08-C DOWN BLOCKA
+       35: PUSH X08-D X07-D X06-D LEFT BLOCKB
+       36: PUSH X07-D X06-D X05-D LEFT BLOCKB
+       37: MOVE X06-D X06-C DOWN
+       38: MOVE X06-C X06-B DOWN
+       39: MOVE X06-B X05-B LEFT
+       40: MOVE X05-B X04-B LEFT
+       41: MOVE X04-B X04-C UP
+       42: MOVE X04-C X04-D UP
+       43: PUSH X04-D X05-D X06-D RIGHT BLOCKB
+       44: PUSH X05-D X06-D X07-D RIGHT BLOCKB
+       45: MOVE X06-D X05-D LEFT
+       46: MOVE X05-D X04-D LEFT
+       47: MOVE X04-D X04-C DOWN
+       48: MOVE X04-C X04-B DOWN
+       49: MOVE X04-B X03-B LEFT
+       50: MOVE X03-B X02-B LEFT
+       51: MOVE X02-B X02-C UP
+       52: MOVE X02-C X02-D UP
+       53: PUSH X02-D X03-D X04-D RIGHT BLOCKC
+       54: PUSH X03-D X04-D X05-D RIGHT BLOCKC
+       55: MOVE X04-D X04-C DOWN
+       56: MOVE X04-C X04-B DOWN
+       57: MOVE X04-B X05-B RIGHT
+       58: MOVE X05-B X06-B RIGHT
+       59: MOVE X06-B X06-C UP
+       60: MOVE X06-C X06-D UP
+       61: PUSH X06-D X05-D X04-D LEFT BLOCKC
+       62: MOVE X05-D X06-D RIGHT
+       63: MOVE X06-D X06-C DOWN
+       64: MOVE X06-C X06-B DOWN
+       65: MOVE X06-B X07-B RIGHT
+       66: MOVE X07-B X08-B RIGHT
+       67: PUSH X08-B X08-C X08-D UP BLOCKA
+       68: PUSH X08-C X08-D X08-E UP BLOCKA
+       69: PUSH X08-D X08-E X08-F UP BLOCKA
+       70: PUSH X08-E X08-F X08-G UP BLOCKA
+       71: MOVE X08-F X08-E DOWN
+       72: MOVE X08-E X08-D DOWN
+       73: MOVE X08-D X08-C DOWN
+       74: MOVE X08-C X08-B DOWN
+       75: MOVE X08-B X07-B LEFT
+       76: MOVE X07-B X06-B LEFT
+       77: MOVE X06-B X06-C UP
+       78: MOVE X06-C X06-D UP
+       79: PUSH X06-D X07-D X08-D RIGHT BLOCKB
+       80: MOVE X07-D X06-D LEFT
+       81: MOVE X06-D X06-C DOWN
+       82: MOVE X06-C X06-B DOWN
+       83: MOVE X06-B X07-B RIGHT
+       84: MOVE X07-B X08-B RIGHT
+       85: MOVE X08-B X08-C UP
+       86: PUSH X08-C X08-D X08-E UP BLOCKB
+       87: PUSH X08-D X08-E X08-F UP BLOCKB
+       88: MOVE X08-E X08-D DOWN
+       89: MOVE X08-D X07-D LEFT
+       90: MOVE X07-D X06-D LEFT
+       91: MOVE X06-D X06-C DOWN
+       92: MOVE X06-C X06-B DOWN
+       93: MOVE X06-B X05-B LEFT
+       94: MOVE X05-B X04-B LEFT
+       95: MOVE X04-B X03-B LEFT
+       96: MOVE X03-B X02-B LEFT
+       97: MOVE X02-B X02-C UP
+       98: MOVE X02-C X02-D UP
+       99: MOVE X02-D X03-D RIGHT
+      100: PUSH X03-D X04-D X05-D RIGHT BLOCKC
+      101: PUSH X04-D X05-D X06-D RIGHT BLOCKC
+      102: PUSH X05-D X06-D X07-D RIGHT BLOCKC
+      103: PUSH X06-D X07-D X08-D RIGHT BLOCKC
+      104: MOVE X07-D X06-D LEFT
+      105: MOVE X06-D X06-C DOWN
+      106: MOVE X06-C X06-B DOWN
+      107: MOVE X06-B X07-B RIGHT
+      108: MOVE X07-B X08-B RIGHT
+      109: MOVE X08-B X08-C UP
+      110: PUSH X08-C X08-D X08-E UP BLOCKC
+     
+
+time spent:    0.00 seconds instantiating 192 easy, 0 hard action templates
+               0.00 seconds reachability analysis, yielding 96 facts and 126 actions
+               0.00 seconds creating final representation with 96 relevant facts
+               0.00 seconds building connectivity graph
+               0.01 seconds searching, evaluating 980 states, to a max depth of 1
+               0.01 seconds total time
